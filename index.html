@@ -4,47 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ประสานทองไดนาโม</title>
-  <style>
-    /* สไตล์พื้นฐาน */
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .hero {
-      padding: 50px 0;
-      text-align: center;
-      background-color: #f4f4f4;
-    }
-    .services, .about, .contact {
-      padding: 20px 0;
-      text-align: center;
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background-color: #222;
-      color: #fff;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline;
-      margin: 0 10px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #000;
-    }
-  </style>
+  <!-- ลิงก์ไฟล์ CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
@@ -83,36 +44,10 @@
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>เกี่ยวกับเรา</h2>
-      <p>ประสานทองไดนาโมมีประสบการณ์ในการซ่อมรถยนต์มากกว่า 10 ปี โดยทีมงานมืออาชีพ พร้อมให้บริการตลอด 24 ชั่วโมงไม่มีวันหยุด</p>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>ติดต่อเรา</h2>
-      <p>สถานที่ตั้ง: 424 หมู่ 2 ตำบลบ่อแฮ้ว อำเภอเมือง จังหวัดลำปาง</p>
-      <p>โทรศัพท์: 094-376-4535, 061-062-8859</p>
-      <p>อีเมล: <a href="mailto:phomzzaa@gmail.com">phomzzaa@gmail.com</a></p>
-      <p>เปิดบริการ: ทุกวัน ตลอด 24 ชั่วโมง</p>
-    </div>
-  </section>
-
   <footer class="footer">
     <div class="container">
       <p>© 2024 ประสานทองไดนาโม - บริการครบวงจรเรื่องรถยนต์</p>
     </div>
   </footer>
-
-  <script>
-    // ทำการเลื่อนอัตโนมัติไปยังหน้า "services" เมื่อโหลดหน้าเว็บเสร็จ
-    window.onload = function() {
-      setTimeout(function() {
-        window.location.hash = "#services";
-      }, 2000); // เลื่อนหลังจาก 2 วินาที
-    };
-  </script>
 </body>
 </html>
