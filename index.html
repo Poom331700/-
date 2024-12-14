@@ -6,158 +6,48 @@
   <title>ประสานทองไดนาโม</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Reset Default Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    /* เพิ่มสไตล์ให้กับแกลเลอรี่ภาพ */
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
     }
 
-    /* Body */
-    body {
-      font-family: 'Sarabun', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+    .slider-images {
+      display: flex;
+      transition: transform 1s ease;
     }
 
-    /* Header */
-    .header {
-      background-color: #FFD700; /* สีทอง */
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .header h1 {
-      font-size: 36px;
-      color: #000;
-    }
-
-    .header p {
-      font-size: 18px;
-      color: #333;
-      margin: 10px 0;
-    }
-
-    .header nav ul {
-      list-style: none;
-      margin-top: 20px;
-    }
-
-    .header nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-
-    .header nav ul li a {
-      color: #000;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    .header nav ul li a:hover {
-      color: #FF6347; /* สีส้ม */
-    }
-
-    /* โลโก้ */
-    .logo {
-      width: 120px;  /* ปรับขนาดโลโก้ */
+    .slider-images img {
+      width: 100%;
       height: auto;
-      display: block;
-      margin: 0 auto;
     }
 
-    /* Hero Section */
-    .hero {
-      background-color: #333;
-      color: #fff;
-      padding: 50px 0;
-      text-align: center;
+    /* กำหนดขนาดที่เหมาะสม */
+    .slider img {
+      object-fit: cover;
     }
 
-    .hero h2 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 20px;
-    }
-
-    /* Services Section */
-    .services {
-      background-color: #fff;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .services h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-    .services ul {
-      list-style: none;
+    /* เพิ่มปุ่มถ้ามี */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
       font-size: 18px;
+      transform: translate(0, -50%);
     }
 
-    .services ul li {
-      margin-bottom: 10px;
+    .prev {
+      left: 0;
     }
 
-    /* About Section */
-    .about {
-      background-color: #f9f9f9;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .about h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-    .about p {
-      font-size: 18px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    /* Contact Section */
-    .contact {
-      background-color: #fff;
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-    .contact p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-
-    .contact a {
-      color: #FFD700;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      color: #FF6347;
-    }
-
-    /* Footer */
-    .footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    .footer p {
-      font-size: 16px;
+    .next {
+      right: 0;
     }
   </style>
 </head>
@@ -183,8 +73,16 @@
     <div class="container">
       <h2>ยินดีต้อนรับสู่ประสานทองไดนาโม</h2>
       <p>ให้บริการซ่อมรถยนต์ทุกชนิด ไม่ว่าจะเป็นระบบไฟฟ้า ไดนาโม แอร์รถยนต์ และอีกมากมาย</p>
-      <!-- รูปภาพที่เลื่อนไปหน้าใหม่ -->
-      <img src="1734151486446.jpg" alt="บริการซ่อมรถยนต์" class="auto-scroll-image">
+
+      <!-- แกลเลอรี่ภาพที่เลื่อนอัตโนมัติ -->
+      <div class="slider">
+        <div class="slider-images">
+          <img src="20241213_121521.jpg" alt="บริการซ่อมรถยนต์">
+          <img src="20241213_121504.jpg" alt="บริการซ่อมรถยนต์">
+          <img src="1734023107866.jpg" alt="บริการซ่อมรถยนต์">
+          <img src="1734023107765.jpg" alt="บริการซ่อมรถยนต์">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -216,8 +114,6 @@
       <p>โทรศัพท์: 094-376-4535, 061-062-8859</p>
       <p>อีเมล: <a href="mailto:phomzzaa@gmail.com">phomzzaa@gmail.com</a></p>
       <p>เปิดบริการ: ทุกวัน ตลอด 24 ชั่วโมง</p>
-      <!-- เพิ่มรูปภาพแทนแผนที่ -->
-      <img src="1734151486446.jpg" alt="ภาพสถานที่" class="contact-image">
     </div>
   </section>
 
@@ -228,12 +124,19 @@
   </footer>
 
   <script>
-    // ทำการเลื่อนอัตโนมัติไปยังหน้า "services" เมื่อโหลดหน้าเว็บเสร็จ
-    window.onload = function() {
-      setTimeout(function() {
-        window.location.hash = "#services";
-      }, 2000); // เลื่อนหลังจาก 2 วินาที
-    };
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.slider-images img');
+    const totalImages = images.length;
+
+    // ฟังก์ชันเลื่อนภาพ
+    function changeImage() {
+      currentIndex = (currentIndex + 1) % totalImages; // เพิ่มตัวเลข index แล้ววนกลับเมื่อถึงภาพสุดท้าย
+      const offset = -currentIndex * 100; // เลื่อนตาม index
+      document.querySelector('.slider-images').style.transform = `translateX(${offset}%)`;
+    }
+
+    // ตั้งเวลาให้เลื่อนอัตโนมัติทุกๆ 3 วินาที
+    setInterval(changeImage, 3000);
   </script>
 </body>
 </html>
