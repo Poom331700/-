@@ -6,15 +6,59 @@
   <title>ประสานทองไดนาโม</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* เพิ่มสไตล์ให้กับรูปภาพ */
-    .auto-scroll-image {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
+    /* Reset Default Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    /* สไตล์สำหรับโลโก้ */
+    /* Body */
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      background-color: #FFD700; /* สีทอง */
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      color: #000;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .header nav ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .header nav ul li a {
+      color: #000;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .header nav ul li a:hover {
+      color: #FF6347; /* สีส้ม */
+    }
+
+    /* โลโก้ */
     .logo {
       width: 120px;  /* ปรับขนาดโลโก้ */
       height: auto;
@@ -22,24 +66,105 @@
       margin: 0 auto;
     }
 
+    /* Hero Section */
     .hero {
+      background-color: #333;
+      color: #fff;
       padding: 50px 0;
       text-align: center;
     }
 
-    .contact-image {
-      width: 100%;
-      max-width: 600px; /* ปรับขนาดให้พอดีกับหน้าจอ */
-      height: auto;
-      display: block;
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* Services Section */
+    .services {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style: none;
+      font-size: 18px;
+    }
+
+    .services ul li {
+      margin-bottom: 10px;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      max-width: 800px;
       margin: 0 auto;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .contact a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #FF6347;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <!-- เพิ่มโลโก้ -->
+      <!-- โลโก้ -->
       <img src="1734151486446.jpg" alt="โลโก้ประสานทองไดนาโม" class="logo">
       <h1>ประสานทองไดนาโม</h1>
       <p>ซ่อมทุกอย่างเกี่ยวกับรถยนต์ เปิดบริการ 24 ชั่วโมง</p>
